@@ -2,11 +2,25 @@
 
 {% block app_content %}
 
-{% for post in posts %}
-    <div class="container-fluid bg-info">
-        <h3>{{ post.author.username }} typed: </h3>
-        <p style="font-size:22px">{{ post.body }}</p>
-    </div>
-{% endfor %}
-  </div>
+    {% for post in posts %}
+        <div class="container-fluid bg-info">
+            <h3>{{ post.author.username }} typed: </h3>
+            <p style="font-size:22px">{{ post.body }}</p>
+        </div>
+    {% endfor %}
+
+    <h3>Another Section</h3>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.</p>
+    <p>Nisl nisi scelerisque eu ultrices vitae. Nunc mi ipsum faucibus vitae
+    aliquet nec. Egestas dui id ornare arcu odio ut sem nulla pharetra.
+    Scelerisque eu ultrices vitae auctor eu augue ut lectus. Duis tristique
+    sollicitudin nibh sit amet commodo nulla facilisi nullam.</p>
+    <p>Maybe put a Page Footer here?</p>
+
 {% endblock %}
